@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./services.scss";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 const variants = {
   initial: {
     x: -500,
@@ -19,7 +19,7 @@ const variants = {
 };
 const Services = () => {
   const ref = useRef();
-  const isInView = useInView(ref, { margin: "-100px" });
+  // const isInView = useInView(ref, { margin: "-100px" });
   return (
     <motion.div
       className="services"
